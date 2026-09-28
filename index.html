@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unako Fanana | Full-Stack Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLES -->
+    <style>
+        :root {
+            --bg-dark: #051424;
+            --card-bg: #0b2239;
+            --text-main: #f0f4f8;
+            --text-muted: #94a3b8;
+            --primary-cyan: #06B6D4;
+            --accent-emerald: #10B981;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            padding: 0 1.5rem;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-cyan);
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 0.5rem;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 4rem auto;
+        }
+
+        /* 1. Hero Section */
+        #hero {
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        #hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            color: var(--accent-emerald);
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-cyan);
+            color: #000000;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--accent-emerald);
+            color: var(--accent-emerald);
+        }
+
+        /* 2. About Section */
+        #about p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* 3. Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            font-weight: 600;
+        }
+
+        /* 4. Projects Section */
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-emerald);
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.75rem;
+            color: var(--primary-cyan);
+        }
+
+        .project-card p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .project-card strong {
+            color: var(--text-main);
+        }
+
+        /* 5. Contact Section */
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            color: var(--accent-emerald);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-links a:hover {
+            color: var(--primary-cyan);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero">
+        <h1>Unako Fanana</h1>
+        <p>Full-Stack Web Developer & Software Development Student</p>
+        <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate software development student with practical experience building modern web applications, database management systems, and custom digital solutions. Focused on clean code, responsive layout design, and full-stack integration.</p>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">Express</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>E-Commerce Gym & Apparel Platform</h3>
+            <p><strong>Problem:</strong> Local gym needed a platform to manage day pass bookings and merchandise sales without physical front-desk delays.</p>
+            <p><strong>Approach:</strong> Designed a responsive web interface integrated with product management and database order handling.</p>
+            <p><strong>Outcome:</strong> Delivered an operational prototype capable of handling user bookings and merchandise browsing.</p>
+            <p><strong>Tech Used:</strong> HTML5, CSS3, JavaScript, MySQL, Node.js</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Restaurant Discovery & Lead Gen App</h3>
+            <p><strong>Problem:</strong> Local food businesses needed modernized web presence and digital customer outreach tools.</p>
+            <p><strong>Approach:</strong> Built an application on Base44 focused on local restaurant identification and service outreach management.</p>
+            <p><strong>Outcome:</strong> Streamlined client prospecting and provided clear redesign preview workflows.</p>
+            <p><strong>Tech Used:</strong> JavaScript, Base44, Web API</p>
+        </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Reach me directly via email or check out my code repositories:</p>
+        <div class="contact-links">
+            <a href="mailto:nakounako36@gmail.com">nakounako36@gmail.com</a>
+            <a href="https://github.com/unakofanana" target="_blank">GitHub Profile</a>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        console.log("Unako Fanana Portfolio Loaded Successfully.");
+    </script>
+</body>
+</html>
